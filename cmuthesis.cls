@@ -11,13 +11,12 @@
 \usepackage[margin=1.3in]{geometry}
 \usepackage[font=small]{caption}
 \usepackage{subcaption}
+\usepackage{amssymb,textcomp}
 %> ---------------------------------------------------------------------------------------------------------------
 
 %% dkoes - Here's a bunch of stuff taken from mjz-titlepage.sty that makes
 %% a pretty CMU techreport acceptable title page
 %% titlepage parameters
-%%   required: title, author, date, Year, trnumber, committee
-%%   optional: permission, support, disclaimer, keywords
 \def\title#1{\gdef\@title{#1}}
 \def\author#1{\gdef\@author{#1}}
 \def\Month#1{\gdef\@Month{#1}}

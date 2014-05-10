@@ -3,16 +3,21 @@
 
 \begin{document}
 \input{content/frontmatter}
-\input{chp-textcontent/chp-introduction}
-\input{chp-textcontent/chp-relatedwork}
+
+%> Content.
+\input{chp-main/chp-introduction}
+\input{chp-main/chp-relatedwork}
 \input{chp-studyone/chp-studyone}
 \input{chp-studytwo/chp-studytwo}
 \input{chp-studythree/chp-studythree}
-\input{chp-textcontent/chp-conclusions}
+\input{chp-main/chp-conclusions}
 
+%> Appendices.
 \appendix\pagestyle{plain}
 \input{chp-studyone/app-material}
 \input{chp-studytwo/app-difussionmodel}
+
+%> Bibliography and end.
 \bibliographystyle{plain}
 \bibliography{content/references}
 \end{document}
