@@ -41,19 +41,19 @@ option 'draft' to the documentclass command, like this:
 To return to normal mode, simply take out the option 'draft'. All the following commands have different behavior depending
 on the mode you are:
 
-\comment{text}:
+	\comment{text}:
 	In dratf mode: 'text' is displayed in red font, between square brackets, and preceded by the word 'Comment'.
 	In normal mode: 'text' is not displayed.
 
-\edadd{text}: ('EDitor ADD')
+	\edadd{text}: ('EDitor ADD')
 	In draft mode: 'text' is displayed in red font.
 	In normal mode: 'text' is displayed in regular font.
 
-\eddelete{text}: ('EDitor DELETE')
+	\eddelete{text}: ('EDitor DELETE')
 	In draft mode: 'text' is displayed in red font and crossed out.
 	In normal mode: 'text' is not displayed
 
-\edreplace{text}{replacement}:
+	\edreplace{text}{replacement}:
 	In draft mode: 'text' is displayed in red font and crossed out. 'replacement' is displayed in red font.
 	In normal mode: only 'replacement' is displayed in regular font.
 
