@@ -26,6 +26,38 @@ repeat all over your work, but that nonetheless may change often.
 3. content/references.bib: This is where your bibliographic references go (BibTeX format).
 
 
+Draft functions
+---------------
+
+I included a few commands to add editing capabilities to your thesis file. When you're editing your thesis, it's useful
+to have a mechanism to make comments, and introduce some stuff that may or may not end up in the thesis. Maybe your advisor
+wants to read the LaTeX file and make comments right there!
+
+When writing and compiling your thesis, you can use two modes: normal and draft. The way to make it a draft is passing the
+option 'draft' to the documentclass command, like this:
+
+	\documentclass[11pt,draft]{cmuthesis}
+
+To return to normal mode, simply take out the option 'draft'. All the following commands have different behavior depending
+on the mode you are:
+
+\comment{text}:
+	In dratf mode: 'text' is displayed in red font, between square brackets, and preceded by the word 'Comment'.
+	In normal mode: 'text' is not displayed.
+
+\edadd{text}: ('EDitor ADD')
+	In draft mode: 'text' is displayed in red font.
+	In normal mode: 'text' is displayed in regular font.
+
+\eddelete{text}: ('EDitor DELETE')
+	In draft mode: 'text' is displayed in red font and crossed out.
+	In normal mode: 'text' is not displayed
+
+\edreplace{text}{replacement}:
+	In draft mode: 'text' is displayed in red font and crossed out. 'replacement' is displayed in red font.
+	In normal mode: only 'replacement' is displayed in regular font.
+
+
 History
 -------
 During 2013 I spent quite a while trying to understand the multiple requirements to put together my PhD thesis for
