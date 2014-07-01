@@ -28,6 +28,8 @@
 \def\msdegree#1{\gdef\@msdegree{M.S., #1}}
 
 \def\maketitle{
+%>----------------------------------------
+%> Title page.
 	\thispagestyle{empty}\vspace*{0.7in}
 	\begin{center}\begin{large}
 	\begin{spacing}{1.4}
@@ -45,6 +47,8 @@
 	\end{spacing}
 	\end{large}\end{center}
 	\clearpage
+%>----------------------------------------
+%> Copyright page.
 	\thispagestyle{empty}
 	\vspace*{5in}
 	\vfill
