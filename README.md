@@ -13,17 +13,92 @@ Instructions
 3. Open a terminal, go to the folder where you uncompressed the zip file, and type 'make'. If everything goes fine,
 you should see soon the file 'thesis.pdf'. To clean up the folder, type 'make clean'.
 
+Foreword
+--------
+
+During 2013 I spent quite a while trying to understand the multiple requirements to put together my PhD thesis for
+Engineering and Public Policy (EPP) at Carnegie Mellon University (CMU).  Besides having many tables, list of questions
+coming from surveys, graphics, statistical data, and a lot of code to put in, I also had to deal with a lot of
+editorial requirements (e.g., "*this is how* your cover page should look like").  Since there are no official templates
+for a phd thesis (which makes no sense to me since it's something we all PhD students have to go through), here's my
+attempt to save you the pain to do it.
+
+This template (actually, a set of files needed to give structure to the thesis) has a lof of filler texts, just to give
+you an example of how to structure your own thesis document. You can safely remove most of the texts.
+
+While there are surely many ways to do what I have done in this template, I strongly suggest that you create a set of
+rules for yourself and stick to them firmly (e.g., putting each chapter in a separate folder, naming all the images in
+a certain way, etc.) Writing your thesis can be very stressful, and many things can go wrong in stressful times (like
+deleting important files unrecoverably).
+
+The most important two pieces of advice that I can give for writing your thesis document are:
+
+1. Back up everything twice out of your own computer.
+2. Be organized.
+
 
 Important files
 ---------------
-1. content/frontmatter.tex: This is where most of the details go: the title of your thesis, your own name, your degrees
+1. theis.tex: This is the main file of your thesis. It contains references to all your chapters, appendices, and other
+needed commands.
+
+2. content/frontmatter.tex: This is where most of the details go: the title of your thesis, your own name, your degrees
 (which should go in your cover page), the date of your graduation, copyright permission, keywords of your thesis, your
 abstract, dedication, and acknowledgements.
 
-2. content/macros.tex: This is where you put all the special LaTeX packages that you need, and all those definitions that
-repeat all over your work, but that nonetheless may change often.
+3. content/macros.tex: This is where you put all the special LaTeX packages that you need, and all those definitions
+that are repeated all over your work, but that nonetheless may change often.
 
-3. content/references.bib: This is where your bibliographic references go (BibTeX format).
+4. content/references.bib: This is where your bibliographic references go (BibTeX format).
+
+Except for these files, you should not need to change any other files.
+
+
+How to structure your thesis
+----------------------------
+
+The starting file for your thesis is thesis.tex. This file includes references to the rest of your thesis. Some lines in this file
+are not meant to be changed, others are. The file is commented to indicate what you should change.
+
+In this template, all the content belonging to a chapter has been put into a separate folder (a "chapter folder").
+There is one folder (chp-main) that contains the "special" chapters: Introduction, Related Work and Conclusions, but if
+you don't like this you may tweak it as you please.
+
+Each chapter folder has two subfolders: images/ and content/. The first one is meant to contain all the images included
+in that chapter.  The second one is meant to contain any other files included in your chapter, such as embedded PDFs,
+or other documents.
+
+Each chapter folder contains one file with the body of the chapter; which in this package has the same name of the
+folder (e.g., chp-studyone contains the file chp-studyone.tex). This file starts with the usual chapter commands:
+
+	\chapter[Short chapter name]{Long chapter name}
+	\label{chp:shortlabelforchapter}
+
+If the chapter is based on a paper you wrote, you should cite your own paper with the \blindfootnote{} command. For
+example:
+
+	\blindfootnote{This paper is based on Doe et al., 1999 \cite{DoeEtAl1999}.}
+
+After that, you may put the content of your chapter, organized with the appropriate LaTeX commands: \section,
+\subsection, \subsubsection, etc. Don't forget to include a \label{} command with a short label if you want to
+cross-reference that section somewhere else in the document.
+
+If you want to include an image, I strongly recommend doing the following:
+
+1. Put the image into the images/ folder. For example, images/myimage.png
+
+2. Create a file within the content/ folder (e.g., content/fig-myimage.tex) with commands to include and reference the
+image.  For example:
+
+	\begin{figure}\centering
+	\includegraphics[scale=0.8]{mychapter/images/myimage.png}
+	\caption[Short caption, to appear in the table of contents]{Long caption for the image, to appear beneath the image itself}
+	\label{LabelForTheImage}
+	\end{figure}
+
+3. Include the previous file within the chapter:
+
+	\input{content/fig-myimage}
 
 
 Draft functions
@@ -57,20 +132,6 @@ on the mode you are:
 	In draft mode: 'text' is displayed in red font and crossed out. 'replacement' is displayed in red font.
 	In normal mode: only 'replacement' is displayed in regular font.
 
-
-History
--------
-During 2013 I spent quite a while trying to understand the multiple requirements to put together my PhD thesis for
-Engineering and Public Policy (EPP) at Carnegie Mellon University (CMU).  Besides having many tables, list of questions
-coming from surveys, graphics, statistical data, and a lot of code to put in, I also had to deal with a lot of
-editorial requirements (e.g., "*this is how* your cover page should look like").  Since there are no official templates
-for a phd thesis (which makes no sense to me since it's something we all PhD students have to go through), here's my
-attempt to save you the pain to do it.
-
-This template has a lot of filler texts just to give you an idea of how it looks.
-
-While this template was created with EPP in mind (and every department has its own requirements), you may tweak it to
-your own purposes.
 
 
 Official sources of information
