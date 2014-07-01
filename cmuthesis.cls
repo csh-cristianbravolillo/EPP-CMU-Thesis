@@ -12,6 +12,8 @@
 \usepackage[font=small]{caption}
 \usepackage{subcaption}
 \usepackage{amssymb,textcomp}
+\usepackage[T1]{fontenc}
+\renewcommand{\familydefault}{\sfdefault}
 %> ---------------------------------------------------------------------------------------------------------------
 
 %% dkoes - Here's a bunch of stuff taken from mjz-titlepage.sty that makes

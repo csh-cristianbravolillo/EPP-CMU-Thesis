@@ -6,12 +6,13 @@ A non-official template for a PhD thesis at Engineering and Public Policy (EPP) 
 Instructions
 ------------
 
-1. Download the zip file to a convenient folder. Uncompress it.
+1. Download the zip file by clicking on the 'Download ZIP' button, to the right column. Uncompress the file.
 
 2. Edit the files referenced below in "Important files" to suit your needs.
 
 3. Open a terminal, go to the folder where you uncompressed the zip file, and type 'make'. If everything goes fine,
 you should see soon the file 'thesis.pdf'. To clean up the folder, type 'make clean'.
+
 
 Foreword
 --------
@@ -133,13 +134,17 @@ on the mode you are:
 	In normal mode: only 'replacement' is displayed in regular font.
 
 
-
 Official sources of information
 -------------------------------
 You should always consult with the administrator of your department. As of May 2014, the official source of information
 for thesis guidelines in Carnegie Mellon University is:
-http://www.cit.cmu.edu/current_students/graduates/thesis_dissertation_policies.html.  For EPP guidelines, you should go
+http://www.cit.cmu.edu/current_students/graduates/thesis_dissertation_policies.html.
+
+For EPP guidelines, go to:
 to: https://www.epp.cmu.edu/graduate/thesis_format_guide.html.
+
+Further requirements can be found at:
+http://engineering.cmu.edu/files/documents/graduate_students/policies/UMI_PreparingYourManuscriptGuide.pdf
 
 
 Dependencies
@@ -154,3 +159,17 @@ License
 The non-official EPP-CMU Thesis Template by Cristian Bravo-Lillo is licensed under a Creative Commons
 Attribution-NonCommercial-ShareAlike 4.0 International License. To see a human-readable version of the license, please go to
 http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
+
+Contact, bugs and acknowledgments
+---------------------------------
+Cristian Bravo-Lillo, cbravo@cmu.edu. Thanks to Nektarios Leontiadis for his input and help.
+
+If you find a bug in the template (that is, something that is wrong based on the department or university guidelines),
+please leave me a note in GitHub:
+
+1. Go to https://github.com/cristianbravolillo/EPP-CMU-Thesis/issues
+
+2. Click on the button 'New issue' (green button to the right)
+
+3. Give it a name and a longer description, and click on 'Submit new issue'.
