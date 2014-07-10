@@ -18,7 +18,7 @@ Foreword
 --------
 
 During 2013 I spent quite a while trying to understand the multiple requirements to put together my PhD thesis for
-Engineering and Public Policy (EPP) at Carnegie Mellon University (CMU).  Besides having many tables, list of questions
+Engineering and Public Policy (EPP) at Carnegie Mellon University (CMU).  Besides having many tables, lots of questions
 coming from surveys, graphics, statistical data, and a lot of code to put in, I also had to deal with a lot of
 editorial requirements (e.g., "*this is how* your cover page should look like").  Since there are no official templates
 for a phd thesis (which makes no sense to me since it's something we all PhD students have to go through), here's my
@@ -40,7 +40,7 @@ The most important two pieces of advice that I can give for writing your thesis 
 
 Important files
 ---------------
-1. theis.tex: This is the main file of your thesis. It contains references to all your chapters, appendices, and other
+1. thesis.tex: This is the main file of your thesis. It contains references to all your chapters, appendices, and other
 needed commands.
 
 2. content/frontmatter.tex: This is where most of the details go: the title of your thesis, your own name, your degrees
@@ -58,16 +58,16 @@ Except for these files, you should not need to change any other files.
 How to structure your thesis
 ----------------------------
 
-The starting file for your thesis is thesis.tex. This file includes references to the rest of your thesis. Some lines in this file
-are not meant to be changed, others are. The file is commented to indicate what you should change.
+The starting file for your thesis is thesis.tex. This file includes references to the chapters and main files. Some
+lines in this file are not meant to be changed, others are.  The file is commented to indicate what you should change.
 
 In this template, all the content belonging to a chapter has been put into a separate folder (a "chapter folder").
 There is one folder (chp-main) that contains the "special" chapters: Introduction, Related Work and Conclusions, but if
 you don't like this you may tweak it as you please.
 
 Each chapter folder has two subfolders: images/ and content/. The first one is meant to contain all the images included
-in that chapter.  The second one is meant to contain any other files included in your chapter, such as embedded PDFs,
-or other documents.
+in that chapter.  The second one is meant to contain latex snippets that will actually embed images or other graphical
+files into your thesis.
 
 Each chapter folder contains one file with the body of the chapter; which in this package has the same name of the
 folder (e.g., chp-studyone contains the file chp-studyone.tex). This file starts with the usual chapter commands:
@@ -118,20 +118,20 @@ To return to normal mode, simply take out the option 'draft'. All the following 
 on the mode you are:
 
 	\comment{text}:
-	In dratf mode: 'text' is displayed in red font, between square brackets, and preceded by the word 'Comment'.
-	In normal mode: 'text' is not displayed.
+	*In draft mode*: 'text' is displayed in red font, between square brackets, and preceded by the word 'Comment'.
+	*In normal mode*: 'text' is not displayed.
 
 	\edadd{text}: ('EDitor ADD')
-	In draft mode: 'text' is displayed in red font.
-	In normal mode: 'text' is displayed in regular font.
+	*In draft mode*: 'text' is displayed in red font.
+	*In normal mode*: 'text' is displayed in regular font.
 
 	\eddelete{text}: ('EDitor DELETE')
-	In draft mode: 'text' is displayed in red font and crossed out.
-	In normal mode: 'text' is not displayed
+	*In draft mode*: 'text' is displayed in red font and crossed out.
+	*In normal mode*: 'text' is not displayed
 
 	\edreplace{text}{replacement}:
-	In draft mode: 'text' is displayed in red font and crossed out. 'replacement' is displayed in red font.
-	In normal mode: only 'replacement' is displayed in regular font.
+	*In draft mode*: 'text' is displayed in red font and crossed out. 'replacement' is displayed in red font.
+	*In normal mode*: only 'replacement' is displayed in regular font.
 
 
 Official sources of information
