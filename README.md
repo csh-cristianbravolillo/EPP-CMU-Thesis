@@ -3,8 +3,8 @@ EPP-CMU-Thesis
 
 A non-official template for a PhD thesis at Engineering and Public Policy (EPP) at Carnegie Mellon University (CMU).
 
-Instructions
-------------
+Quick Instructions
+------------------
 
 1. Download the zip file by clicking on the 'Download ZIP' button, to the right column. Uncompress the file.
 
@@ -14,8 +14,10 @@ Instructions
 you should see soon the file 'thesis.pdf'. To clean up the folder, type 'make clean'.
 
 
-Foreword
---------
+Not-so-quick instructions
+-------------------------
+
+### Foreword
 
 During 2013 I spent quite a while trying to understand the multiple requirements to put together my PhD thesis for
 Engineering and Public Policy (EPP) at Carnegie Mellon University (CMU).  Besides having many tables, lots of questions
@@ -38,25 +40,24 @@ The most important two pieces of advice that I can give for writing your thesis 
 2. Be organized.
 
 
-Important files
----------------
-1. thesis.tex: This is the main file of your thesis. It contains references to all your chapters, appendices, and other
+### Important files
+
+1. *thesis.tex*: This is the main file of your thesis. It contains references to all your chapters, appendices, and other
 needed commands.
 
-2. content/frontmatter.tex: This is where most of the details go: the title of your thesis, your own name, your degrees
+2. *content/frontmatter.tex*: This is where most of the details go: the title of your thesis, your own name, your degrees
 (which should go in your cover page), the date of your graduation, copyright permission, keywords of your thesis, your
 abstract, dedication, and acknowledgements.
 
-3. content/macros.tex: This is where you put all the special LaTeX packages that you need, and all those definitions
+3. *content/macros.tex*: This is where you put all the special LaTeX packages that you need, and all those definitions
 that are repeated all over your work, but that nonetheless may change often.
 
-4. content/references.bib: This is where your bibliographic references go (BibTeX format).
+4. *content/references.bib*: This is where your bibliographic references go (BibTeX format).
 
 Except for these files, you should not need to change any other files.
 
 
-How to structure your thesis
-----------------------------
+### How to structure your thesis
 
 The starting file for your thesis is thesis.tex. This file includes references to the chapters and main files. Some
 lines in this file are not meant to be changed, others are.  The file is commented to indicate what you should change.
@@ -84,6 +85,8 @@ After that, you may put the content of your chapter, organized with the appropri
 \subsection, \subsubsection, etc. Don't forget to include a \label{} command with a short label if you want to
 cross-reference that section somewhere else in the document.
 
+### How to include images or other graphical stuff
+
 If you want to include an image, I strongly recommend doing the following:
 
 1. Put the image into the images/ folder. For example, images/myimage.png
@@ -102,14 +105,13 @@ image.  For example:
 	\input{content/fig-myimage}
 
 
-Draft functions
----------------
+### How to make comments (actually, how to use editing commands)
 
 I included a few commands to add editing capabilities to your thesis file. When you're editing your thesis, it's useful
 to have a mechanism to make comments, and introduce some stuff that may or may not end up in the thesis. Maybe your advisor
 wants to read the LaTeX file and make comments right there!
 
-When writing and compiling your thesis, you can use two modes: normal and draft. The way to make it a draft is passing the
+When writing and compiling your thesis, you can use two modes: *normal* and *draft*. The way to make it a draft is passing the
 option 'draft' to the documentclass command, like this:
 
 	\documentclass[11pt,draft]{cmuthesis}
@@ -118,24 +120,27 @@ To return to normal mode, simply take out the option 'draft'. All the following 
 on the mode you are:
 
 	\comment{text}:
-	*In draft mode*: 'text' is displayed in red font, between square brackets, and preceded by the word 'Comment'.
-	*In normal mode*: 'text' is not displayed.
+	In draft mode: 'text' is displayed in red font, between square brackets, and preceded by the word 'Comment'.
+	In normal mode: 'text' is not displayed.
 
 	\edadd{text}: ('EDitor ADD')
-	*In draft mode*: 'text' is displayed in red font.
-	*In normal mode*: 'text' is displayed in regular font.
+	In draft mode: 'text' is displayed in red font.
+	In normal mode: 'text' is displayed in regular font.
 
 	\eddelete{text}: ('EDitor DELETE')
-	*In draft mode*: 'text' is displayed in red font and crossed out.
-	*In normal mode*: 'text' is not displayed
+	In draft mode: 'text' is displayed in red font and crossed out.
+	In normal mode: 'text' is not displayed
 
 	\edreplace{text}{replacement}:
-	*In draft mode*: 'text' is displayed in red font and crossed out. 'replacement' is displayed in red font.
-	*In normal mode*: only 'replacement' is displayed in regular font.
+	In draft mode: 'text' is displayed in red font and crossed out. 'replacement' is displayed in red font.
+	In normal mode: only 'replacement' is displayed in regular font.
 
 
-Official sources of information
--------------------------------
+For more information
+--------------------
+
+### Official sources of information
+
 You should always consult with the administrator of your department. As of May 2014, the official source of information
 for thesis guidelines in Carnegie Mellon University is:
 http://www.cit.cmu.edu/current_students/graduates/thesis_dissertation_policies.html.
@@ -147,22 +152,29 @@ Further requirements can be found at:
 http://engineering.cmu.edu/files/documents/graduate_students/policies/UMI_PreparingYourManuscriptGuide.pdf
 
 
-Dependencies
-------------
+### How do I get the latest version of this template?
+
+1. Go to https://github.com/cristianbravolillo/EPP-CMU-Thesis/
+
+2. Click on the button "Download ZIP", in the bottom of the column to the right.
+
+
+### Dependencies
+
 This template was compiled with pdfTeX 3.1415926-2.5-1.40.14. It was composed with TexStudio 2.6.2 in a laptop with
 Ubuntu 13.10. In theory, you may be able to use it in any TeX-capable distribution, although it has not been tested
 extensively in any other platform than Ubuntu 13.10.
 
 
-License
--------
+### License
+
 The non-official EPP-CMU Thesis Template by Cristian Bravo-Lillo is licensed under a Creative Commons
 Attribution-NonCommercial-ShareAlike 4.0 International License. To see a human-readable version of the license, please go to
 http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
 
-Contact, bugs and acknowledgments
----------------------------------
+### Contact, bugs and acknowledgments
+
 Cristian Bravo-Lillo, cbravo@cmu.edu. Thanks to Nektarios Leontiadis for his input and help.
 
 If you find a bug in the template (that is, something that is wrong based on the department or university guidelines),
