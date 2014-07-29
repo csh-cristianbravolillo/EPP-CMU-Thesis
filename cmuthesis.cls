@@ -5,15 +5,18 @@
 \LoadClassWithOptions{book}
 
 %> ---------------------------------------------------------------------------------------------------------------
-%> Packages: cbravo@cmu.edu, 20131202
-\usepackage{times,graphicx,amssymb,color,multirow,colortbl,hhline,array,url,fancyhdr,setspace,enumerate}
+%> Fonts.
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{amssymb,textcomp}
+\renewcommand{\familydefault}{\sfdefault}
+%> ---------------------------------------------------------------------------------------------------------------
+%> Other packages.
+\usepackage{graphicx,color,multirow,colortbl,hhline,array,url,fancyhdr,setspace,enumerate}
 \usepackage[normalem]{ulem}
 \usepackage[margin=1.3in]{geometry}
 \usepackage[font=small]{caption}
 \usepackage{subcaption}
-\usepackage{amssymb,textcomp}
-\usepackage[T1]{fontenc}
-\renewcommand{\familydefault}{\sfdefault}
 %> ---------------------------------------------------------------------------------------------------------------
 
 %% dkoes - Here's a bunch of stuff taken from mjz-titlepage.sty that makes
