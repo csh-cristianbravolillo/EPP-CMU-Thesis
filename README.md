@@ -165,6 +165,14 @@ This template was compiled with pdfTeX 3.1415926-2.5-1.40.14. It was composed wi
 Ubuntu 13.10. In theory, you may be able to use it in any TeX-capable distribution, although it has not been tested
 extensively in any other platform than Ubuntu 13.10.
 
+In Ubuntu, you should install the following packages BEFORE trying to do
+anything:
+
+	% sudo apt install texlive textlive-latex-extra texlive-publishers
+
+In other Linux distros, you should use the corresponding install command
+(e.g., yum, aptitude, etc.)
+
 
 ### License
 
