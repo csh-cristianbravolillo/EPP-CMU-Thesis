@@ -146,7 +146,7 @@ for thesis guidelines in Carnegie Mellon University is:
 http://www.cit.cmu.edu/current_students/graduates/thesis_dissertation_policies.html.
 
 For EPP guidelines, go to:
-to: https://www.epp.cmu.edu/graduate/thesis_format_guide.html.
+http://www.cmu.edu/epp/current/doctoral-thesis/index.html
 
 Further requirements can be found at:
 http://engineering.cmu.edu/files/documents/graduate_students/policies/UMI_PreparingYourManuscriptGuide.pdf
@@ -175,7 +175,7 @@ http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
 ### Contact, bugs and acknowledgments
 
-Cristian Bravo-Lillo, cbravo@cmu.edu. Thanks to Nektarios Leontiadis for his input and help.
+Cristian Bravo-Lillo, cbravo@kind.cl. Thanks to Nektarios Leontiadis for his input and help.
 
 If you find a bug in the template (that is, something that is wrong based on the department or university guidelines),
 please leave me a note in GitHub:
