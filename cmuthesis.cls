@@ -24,6 +24,7 @@
 %% titlepage parameters
 \def\title#1{\gdef\@title{#1}}
 \def\author#1{\gdef\@author{#1}}
+\def\affiliation#1{\gdef\@affiliation{#1}}
 \def\Month#1{\gdef\@Month{#1}}
 \def\Year#1{\gdef\@Year{#1}}
 \def\permission#1{\gdef\@permission{#1}}
@@ -39,7 +40,7 @@
 	\begin{center}\begin{large}
 	\begin{spacing}{1.4}
 	{\bf \@title}\\[0.5in]
-	Submitted in partial fulfillment of the requirements for\\the degree of\\Doctor of Philosophy\\in\\Engineering and Public Policy \\[0.7in]
+	Submitted in partial fulfillment of the requirements for\\the degree of\\Doctor of Philosophy\\in\\\@ifundefined{@affiliation}{Engineering and Public Policy}{{\@affiliation}} \\[0.7in]
 	\@author\\
 	\@ifundefined{@bsdegree}{\vspace*{0.8in}}{{\@bsdegree}\\}
 	\@ifundefined{@msdegree}{\vspace*{0.8in}}{{\@msdegree}\\}
