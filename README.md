@@ -19,20 +19,11 @@ Not-so-quick instructions
 
 ### Foreword
 
-During 2013 I spent quite a while trying to understand the multiple requirements to put together my PhD thesis for
-Engineering and Public Policy (EPP) at Carnegie Mellon University (CMU).  Besides having many tables, lots of questions
-coming from surveys, graphics, statistical data, and a lot of code to put in, I also had to deal with a lot of
-editorial requirements (e.g., "*this is how* your cover page should look like").  Since there are no official templates
-for a phd thesis (which makes no sense to me since it's something we all PhD students have to go through), here's my
-attempt to save you the pain to do it.
+During 2013 I spent quite a while trying to understand the multiple requirements to put together my PhD thesis for Engineering and Public Policy (EPP) at Carnegie Mellon University (CMU).  Besides having many tables, lots of questions coming from surveys, graphics, statistical data, and a lot of code to put in, I also had to deal with a lot of editorial requirements (e.g., "*this is how* your cover page should look like").  Since there are no official templates for a phd thesis (which makes no sense to me since it's something we all PhD students have to go through), here's my attempt to save you the pain to do it.
 
-This template (actually, a set of files needed to give structure to the thesis) has a lof of filler texts, just to give
-you an example of how to structure your own thesis document. You can safely remove most of the texts.
+This template (actually, a set of files needed to give structure to the thesis) has a lof of filler texts, just to give you an example of how to structure your own thesis document. You can safely remove most of the texts.
 
-While there are surely many ways to do what I have done in this template, I strongly suggest that you create a set of
-rules for yourself and stick to them firmly (e.g., putting each chapter in a separate folder, naming all the images in
-a certain way, etc.) Writing your thesis can be very stressful, and many things can go wrong in stressful times (like
-deleting important files unrecoverably).
+While there are surely many ways to do what I have done in this template, I strongly suggest that you create a set of rules for yourself and stick to them firmly (e.g., putting each chapter in a separate folder, naming all the images in a certain way, etc.) Writing your thesis can be very stressful, and many things can go wrong in stressful times (like deleting important files unrecoverably).
 
 The most important two pieces of advice that I can give for writing your thesis document are:
 
@@ -42,15 +33,11 @@ The most important two pieces of advice that I can give for writing your thesis 
 
 ### Important files
 
-1. *thesis.tex*: This is the main file of your thesis. It contains references to all your chapters, appendices, and other
-needed commands.
+1. *thesis.tex*: This is the main file of your thesis. It contains references to all your chapters, appendices, and other needed commands.
 
-2. *content/frontmatter.tex*: This is where most of the details go: the title of your thesis, your own name, your degrees
-(which should go in your cover page), the date of your graduation, copyright permission, keywords of your thesis, your
-abstract, dedication, and acknowledgements.
+2. *content/frontmatter.tex*: This is where most of the details go: the title of your thesis, your own name, your degrees (which should go in your cover page), the date of your graduation, copyright permission, keywords of your thesis, your abstract, dedication, and acknowledgements.
 
-3. *content/macros.tex*: This is where you put all the special LaTeX packages that you need, and all those definitions
-that are repeated all over your work, but that nonetheless may change often.
+3. *content/macros.tex*: This is where you put all the special LaTeX packages that you need, and all those definitions that are repeated all over your work, but that nonetheless may change often.
 
 4. *content/references.bib*: This is where your bibliographic references go (BibTeX format).
 
@@ -107,33 +94,31 @@ image.  For example:
 
 ### How to make comments (actually, how to use editing commands)
 
-I included a few commands to add editing capabilities to your thesis file. When you're editing your thesis, it's useful
-to have a mechanism to make comments, and introduce some stuff that may or may not end up in the thesis. Maybe your advisor
-wants to read the LaTeX file and make comments right there!
+I included a few commands to add editing capabilities to your thesis file. When you're editing your thesis, it's useful to have a mechanism to make comments, and introduce some stuff that may or may not end up in the thesis. Maybe your advisor wants to read the LaTeX file and make comments right there!
 
-When writing and compiling your thesis, you can use two modes: *normal* and *draft*. The way to make it a draft is passing the
-option 'draft' to the documentclass command, like this:
+When writing and compiling your thesis, you can use two modes: *normal* and *draft*. The way to make it a draft is passing the option 'draft' to the documentclass command, like this:
 
-	\documentclass[11pt,draft]{cmuthesis}
+```tex
+\documentclass[11pt,draft]{cmuthesis}
+```
 
-To return to normal mode, simply take out the option 'draft'. All the following commands have different behavior depending
-on the mode you are:
+To return to normal mode, simply take out the option 'draft'. All the following commands have different behavior depending on the mode you are:
 
-	\comment{text}:
-	In draft mode: 'text' is displayed in red font, between square brackets, and preceded by the word 'Comment'.
-	In normal mode: 'text' is not displayed.
+`\comment{text}:`
+- In draft mode: 'text' is displayed in red font, between square brackets, and preceded by the word 'Comment'.
+- In normal mode: 'text' is not displayed.
 
-	\edadd{text}: ('EDitor ADD')
-	In draft mode: 'text' is displayed in red font.
-	In normal mode: 'text' is displayed in regular font.
+`\edadd{text}: ('EDitor ADD')`
+- In draft mode: 'text' is displayed in red font.
+- In normal mode: 'text' is displayed in regular font.
 
-	\eddelete{text}: ('EDitor DELETE')
-	In draft mode: 'text' is displayed in red font and crossed out.
-	In normal mode: 'text' is not displayed
+`\eddelete{text}: ('EDitor DELETE')`
+- In draft mode: 'text' is displayed in red font and crossed out.
+- In normal mode: 'text' is not displayed
 
-	\edreplace{text}{replacement}:
-	In draft mode: 'text' is displayed in red font and crossed out. 'replacement' is displayed in red font.
-	In normal mode: only 'replacement' is displayed in regular font.
+`\edreplace{text}{replacement}:`
+- In draft mode: 'text' is displayed in red font and crossed out. 'replacement' is displayed in red font.
+- In normal mode: only 'replacement' is displayed in regular font.
 
 
 For more information
@@ -141,15 +126,9 @@ For more information
 
 ### Official sources of information
 
-You should always consult with the administrator of your department. As of May 2014, the official source of information
-for thesis guidelines in Carnegie Mellon University is:
-http://www.cit.cmu.edu/current_students/graduates/thesis_dissertation_policies.html.
+You should always consult with the administrator of your department. As of January 2019, the official source of information for thesis guidelines at the College of Engineering in Carnegie Mellon University is https://engineering.cmu.edu/education/academic-policies/graduate-policies/thesis-dissertation.html
 
-For EPP guidelines, go to:
-http://www.cmu.edu/epp/current/doctoral-thesis/index.html
-
-Further requirements can be found at:
-http://engineering.cmu.edu/files/documents/graduate_students/policies/UMI_PreparingYourManuscriptGuide.pdf
+For EPP guidelines, go to: https://www.cmu.edu/epp/current/doctoral-thesis/index.html
 
 
 ### How do I get the latest version of this template?
