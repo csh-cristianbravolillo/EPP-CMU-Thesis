@@ -1,6 +1,4 @@
-# EPP-CMU-Thesis
-
-A non-official template for a PhD thesis at Engineering and Public Policy (EPP) at Carnegie Mellon University (CMU).
+# The non-official PhD thesis template for Engineering and Public Policy (EPP) at Carnegie Mellon University (CMU).
 
 ## Quick Instructions
 
