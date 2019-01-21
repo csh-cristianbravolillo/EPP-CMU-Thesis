@@ -145,3 +145,5 @@ If you find a bug in the template (that is, something that is wrong based on the
 1. Go to https://github.com/cristianbravolillo/EPP-CMU-Thesis/issues
 1. Click on the button 'New issue' (green button to the right)
 1. Give it a name and a longer description, and click on 'Submit new issue'.
+
+If you want to thank me, you may send me a tweet to [@tamabravolillo](https://twitter.com/tamabravolillo) or leave a message at [LinkedIn](https://www.linkedin.com/in/cristianbravolillo/).
